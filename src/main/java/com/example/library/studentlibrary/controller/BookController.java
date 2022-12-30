@@ -32,7 +32,7 @@ public class BookController {
 
         List<Book> bookList = bookService.getBooks(genre, available, author); //find the elements of the list by yourself
 
-        return new ResponseEntity<>(bookList, HttpStatus.OK);
+        return new ResponseEntity(bookList, HttpStatus.OK);
 
     }
 }
